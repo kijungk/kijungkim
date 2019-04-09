@@ -10,6 +10,6 @@ export class AboutComponent {
   header: Header = null;
 
   constructor() {
-    this.header = new Header('About Me', 'The person behind the code');
+    this.header = new Header('About Me', '"A little learning is a dangerous thing"', '-Alexander Pope');
   }
 }

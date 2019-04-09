@@ -10,6 +10,6 @@ export class SkillsComponent {
   header: Header = null;
 
   constructor() {
-    this.header = new Header('Skills', 'Technical and interpersonal ability')
+    this.header = new Header('Skills', '"It is possible to fly without motors, but not without knowledge and skill"', '-Wilbur Wright');
   }
 }
