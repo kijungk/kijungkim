@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { Header } from '../../classes/header';
 
 @Component({
   selector: 'app-experiences',
   templateUrl: './experiences.component.html',
   styleUrls: ['./experiences.component.scss']
 })
-export class ExperiencesComponent implements OnInit {
+export class ExperiencesComponent {
+  header: Header = null;
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor() {
+    this.header = new Header('Experiences', 'Professional experiences in software development');
   }
-
 }
