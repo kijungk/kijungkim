@@ -10,6 +10,6 @@ export class HomeComponent {
   header: Header = null;
 
   constructor() {
-    this.header = new Header('Welcome', 'To Ki Jung Kim\'s personal website', null);
+    this.header = new Header('Welcome', '"My life is an open book. You\'re welcome to speculate"', '-Karan Patel');
   }
 }
