@@ -8,6 +8,7 @@ import { Header } from '../../classes/header';
 })
 export class HomeComponent {
   header: Header = null;
+
   constructor() {
     this.header = new Header('Welcome', 'To Ki Jung Kim\'s personal website', null);
   }
