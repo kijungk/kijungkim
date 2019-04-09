@@ -1,3 +1,7 @@
 <div id="app">
-  <router-outlet></router-outlet>
+  <app-navigation></app-navigation>
+  <div [@routeChangeAnimations]="o && o.activatedRouteData 
+  && o.activatedRouteData['animation']">
+    <router-outlet #o="outlet"></router-outlet>
+  </div>
 </div>
