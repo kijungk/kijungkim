@@ -1,10 +1,12 @@
 import { Component, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
+import { routeChangeAnimation } from './animations/route-change/route-change-animation';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  animations: [routeChangeAnimation]
 })
 export class AppComponent {
   constructor(private router: Router) { }
@@ -53,7 +55,7 @@ export class AppComponent {
 
   goToTargetRouteFromCurrentRouteAndDirection(route: string, direction: string) {
     switch (route) {
-      case '/':
+      case '/home':
         if (direction === 'right') {
           return this.router.navigateByUrl('/about');
         }
@@ -69,7 +71,7 @@ export class AppComponent {
         }
 
         if (direction === 'left') {
-          return this.router.navigateByUrl('/');
+          return this.router.navigateByUrl('/home');
         }
 
         break;
@@ -114,7 +116,7 @@ export class AppComponent {
 
         break;
       default:
-        return this.router.navigateByUrl('/');
+        return this.router.navigateByUrl('/home');
     }
   }
 }
