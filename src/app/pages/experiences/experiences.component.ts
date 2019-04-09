@@ -10,6 +10,6 @@ export class ExperiencesComponent {
   header: Header = null;
 
   constructor() {
-    this.header = new Header('Experiences', 'Professional experiences in software development');
+    this.header = new Header('Experiences', '"Let the beauty of what you love be what you do"', '-Jalāl ad-Dīn Muhammad Rūmī');
   }
 }

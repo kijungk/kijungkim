@@ -1,9 +1,11 @@
 export class Header {
     title: string = '';
-    subtitle: string = '';
+    quote: string = '';
+    author: string = '';
 
-    constructor(title, subtitle) {
+    constructor(title, quote, author) {
         this.title = title;
-        this.subtitle = subtitle;
+        this.quote = quote;
+        this.author = author;
     }
 }
