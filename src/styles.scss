@@ -31,24 +31,26 @@ body {
   width: 100%;
 }
 
-.content-title {
-  font-family: 'Fascinate Inline', cursive;
-  font-size: 42px;
-  color: lightslategrey;
-  margin: 12px 8px 0 8px;
-}
+.header {
+  .content-title {
+    font-family: 'Fascinate Inline', cursive;
+    font-size: 42px;
+    color: lightslategrey;
+    margin: 12px 8px 0 8px;
+  }
 
-.content-quote {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  color: lightslategrey;
-  margin: 4px 8px 0 8px;
-}
+  .content-quote {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: lightslategrey;
+    margin: 4px 8px 0 8px;
+  }
 
-.content-author {
-  text-align: end;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-  color: lightslategrey;
-  margin-right: 8px;
+  .content-author {
+    text-align: end;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: lightslategrey;
+    margin: 4px 8px 0 8px;
+  }
 }
