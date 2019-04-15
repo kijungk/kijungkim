@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Header } from '../../classes/header';
+import skillsApi from '../../../api/skills-api';
 
 @Component({
   selector: 'app-skills',
@@ -9,7 +10,14 @@ import { Header } from '../../classes/header';
 export class SkillsComponent {
   header: Header = null;
 
+  skills: Array<Object> = [];
+
   constructor() {
     this.header = new Header('Skills', '"It is possible to fly without motors, but not without knowledge and skill"', '-Wilbur Wright');
+    this.skills = this.getSectionIcons();
+  }
+
+  getSectionIcons() {
+    return skillsApi.getSkillsData();
   }
 }

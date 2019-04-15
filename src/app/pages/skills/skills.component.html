@@ -11,5 +11,12 @@
         {{header.author}}
       </div>
     </div>
+
+    <div class="content-main skills-content-main">
+      <div class="icon-button" *ngFor="let skill of skills">
+        <img class="icon" src={{skill.iconPath}} alt="">
+      </div>
+    </div>
+
   </div>
 </div>

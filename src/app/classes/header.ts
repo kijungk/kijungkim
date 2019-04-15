@@ -3,7 +3,7 @@ export class Header {
     quote: string = '';
     author: string = '';
 
-    constructor(title, quote, author) {
+    constructor(title: string, quote: string, author: string) {
         this.title = title;
         this.quote = quote;
         this.author = author;
