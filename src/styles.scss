@@ -28,29 +28,41 @@ body {
 }
 
 .content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   width: 100%;
-}
 
-.header {
-  .content-title {
-    font-family: 'Fascinate Inline', cursive;
-    font-size: 42px;
-    color: lightslategrey;
-    margin: 12px 8px 0 8px;
+  .header {
+    width: 100%;
+
+    .content-title {
+      font-family: 'Fascinate Inline', cursive;
+      font-size: 42px;
+      color: lightslategrey;
+      margin: 12px 8px 0 8px;
+    }
+
+    .content-quote {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 16px;
+      color: lightslategrey;
+      margin: 4px 8px 0 8px;
+    }
+
+    .content-author {
+      text-align: end;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
+      color: lightslategrey;
+      margin: 4px 8px 0 8px;
+    }
   }
 
-  .content-quote {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    color: lightslategrey;
-    margin: 4px 8px 0 8px;
-  }
-
-  .content-author {
-    text-align: end;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    color: lightslategrey;
-    margin: 4px 8px 0 8px;
+  .content-main {
+    margin: 20px 12px 0 12px;
+    background: white;
+    border-radius: 12px;
   }
 }
