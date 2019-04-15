@@ -62,7 +62,17 @@ body {
 
   .content-main {
     margin: 20px 12px 0 12px;
-    background: white;
+    background: ghostwhite;
     border-radius: 12px;
+    max-height: calc(100vh - 240px);
+    overflow-y: scroll;
+    box-shadow: inset 0 0 8px grey;
   }
+}
+
+.paragraph {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: lightslategrey;
+  margin: 12px 12px;
 }
