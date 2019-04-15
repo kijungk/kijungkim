@@ -14,10 +14,10 @@ export class SkillsComponent {
 
   constructor() {
     this.header = new Header('Skills', '"It is possible to fly without motors, but not without knowledge and skill"', '-Wilbur Wright');
-    this.skills = this.getSectionIcons();
+    this.skills = this.getSkillsData();
   }
 
-  getSectionIcons() {
+  getSkillsData() {
     return skillsApi.getSkillsData();
   }
 }
