@@ -1,0 +1,17 @@
+#about {
+  .about-content-main {
+    .profile-picture {
+      margin: 8px;
+      height: 150px;
+      max-height: 150px;
+      width: 150px;
+      max-width: 150px;
+      border-radius: 50%;
+      float: left;
+      shape-outside: circle();
+      background-image: url('/assets/profile-pictures/profile-picture-1.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}
